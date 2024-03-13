@@ -8,7 +8,9 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { FaInstagramSquare } from "react-icons/fa";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import hero from "@/public/1689096926326.jpg"
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,8 +33,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src= "https://media.licdn.com/dms/image/D5603AQEPZwtGubZbAA/profile-displayphoto-shrink_800_800/0/1688562746700?e=1695859200&v=beta&t=VbOlq5If6l-V-RH_tkGbTdMhSsyexHTK2EqCyfSk69Q"
-              alt="Ricardo portrait"
+              src= {hero}
+              alt="Ashiq"
               width="100"
               height="100"
               quality="95"
@@ -63,7 +65,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Ashiq.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span>.
+        <span className="font-bold">Full-stack developer</span>.
       </motion.h1>
 
       <motion.div
@@ -75,14 +77,11 @@ export default function Intro() {
         }}
       >
         <Link
-          href="#contact"
+          href="https://wa.link/fjtbwb"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
+
         >
-          Contact me here{" "}
+          Let's Talk{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -91,7 +90,7 @@ export default function Intro() {
           href="/ASHIQ_C_RESUME.pdf"
           download
         >
-          Download CV{" "}
+         Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
@@ -102,6 +101,15 @@ export default function Intro() {
         >
           <BsLinkedin />
         </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.instagram.com/ashiq.c_/"
+          target="_blank"
+        >
+         <FaInstagramSquare />
+        </a>
+
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
