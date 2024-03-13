@@ -87,7 +87,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  cursor-pointer borderBlack dark:bg-white/10"
-          href="/ASHIQ_C_RESUME.pdf"
+          href="/Ashiq_Resume_Fulllstack_Developer.pdf"
           download
         >
          Resume{" "}
